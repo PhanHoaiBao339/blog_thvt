@@ -1,0 +1,12 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #222222;
+    --color-bg-submenu: #282828;
+    --color-origin: #ffa018;
+    --color-icon-fb: #1877f2;
+    --color-icon-ytb: #ff0000;
+
+    --font-family: Arial, Helvetica, sans-serif;
+
+    --width-page: 1170px;
+}

@@ -1,0 +1,142 @@
+/* Định dạng dùng chung cho các trang thuộc master layout */
+
+/* Header begin*/
+.header {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+}
+
+.header-logo {}
+
+.header-logo__img {
+    margin-right: 1rem;
+
+    width: 7rem;
+    height: 7rem;
+}
+
+
+.header-logo__img>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-title {
+    font-weight: bold;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+
+.header-title__text {
+    color: var(--color-black);
+}
+
+.header-title__text--orange {
+    color: var(--color-origin);
+}
+
+.header-navbar {}
+
+.navbar-list {}
+
+.navbar-item {
+    position: relative;
+
+    font-size: 1.8rem;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.navbar-item__link {
+    display: block;
+    align-items: center;
+    padding: calc(108px - 70px) 1.5rem;
+    color: var(--color-black);
+}
+
+
+.navbar-item__link:hover {
+    color: var(--color-origin);
+}
+
+.navbar-item:hover .navbar-sub__list{
+    display: block;
+}
+
+.header-goto__list {
+    font-size: 2rem;
+}
+
+.header-goto__item {
+    margin-left: 20px;
+
+    color: var(--color-black);
+
+    cursor: pointer;
+}
+
+.header-goto__item:hover {
+    color: var(--color-origin);
+}
+
+.header-goto__link {
+    color: var(--color-black);
+}
+
+.header-goto__link--fb:hover {
+    color: var(--color-icon-fb);
+}
+
+.header-goto__link--ytb:hover {
+    color: var(--color-icon-ytb);
+}
+
+.navbar-sub__list {
+    display: none;
+    position: absolute;
+    left: 0;
+
+    width: 250px;
+
+    background-color: var(--color-bg-submenu);
+}
+
+.navbar-sub__item {
+    padding: 14px;
+
+    text-transform: capitalize;
+}
+
+.navbar-sub__item:hover {
+    background-color: var(--color-origin);
+
+}
+
+.navbar-sub__link {
+    color: var(--color-white);
+}
+
+.navbar-item__icon{
+    margin-left: 5px;
+
+    font-size: 1rem;
+}
+
+/* Header end*/
+
+
+/* Footer begin*/
+.footer {
+    height: 200rem;
+    background-color: lightgray;
+}
+
+/* Footer end*/
