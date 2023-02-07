@@ -1,0 +1,8 @@
+/* === GLOBAL === */
+/* Tái sử dụng - dùng chung */
+@import url(./global/reset.css);
+@import url(./global/component.css);
+@import url(./global/main.css);
+@import url(./global/variable.css);
+
+/* === PAGE === */
