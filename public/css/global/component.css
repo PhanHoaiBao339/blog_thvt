@@ -1,14 +1,37 @@
 /* Các items và layout dùng lại */
-
-.width-page{
-    margin: auto;    
-    width: var(--width-page);  
+.width-page {
+  margin: auto;
+  width: var(--width-page);
 }
 
-.layout-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.layout-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.button--origin {
+  border: 1px solid transparent;
+  padding: 15px 35px;
+
+  background-color: var(--color-origin);
+
+  color: var(--color-white);
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+
+  transition: all 0.3s;
+
+  cursor: pointer;
+}
+
+.button--origin:hover {
+  box-shadow: 3px 2.6px 0px var(--color-origin);
+
+  color: var(--color-origin);
+  font-weight: bold;
+
+  background-color: var(--color-white);
 }
