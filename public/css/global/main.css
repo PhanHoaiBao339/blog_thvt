@@ -1,6 +1,6 @@
 /* Định dạng dùng chung cho các trang thuộc master layout */
 
-/* Header begin*/
+/* ================= HEADER BEGIN ==================*/
 .header {
   position: fixed;
   top: 0;
@@ -23,6 +23,7 @@
   align-items: center;
 }
 
+/* HEADER LOGO BEGIN */
 .header-logo {
   cursor: pointer;
 }
@@ -59,7 +60,7 @@
 
 .header-title {
   font-weight: bold;
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   text-transform: uppercase;
 }
 
@@ -74,7 +75,9 @@
 
   color: var(--color-origin);
 }
+/* HEADER LOGO END */
 
+/* NAVBAR BEGIN */
 .navbar-list {
   justify-content: center;
 }
@@ -82,9 +85,13 @@
 .navbar-item {
   position: relative;
 
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 
   cursor: pointer;
+}
+
+.navbar-item--select {
+  color: var(--color-origin) !important;
 }
 
 .navbar-item__link {
@@ -92,7 +99,7 @@
 
   padding: 0 16px;
   width: auto;
-  height: 9rem;
+  height: var(--height-header);
 
   align-items: center;
   vertical-align: middle;
@@ -132,7 +139,7 @@
 
   width: 222px;
 
-  background-color: var(--color-bg-submenu);
+  background-color: var(--color-black);
 }
 
 .navbar-sub__item {
@@ -150,7 +157,9 @@
 .navbar-sub__link {
   color: var(--color-white);
 }
+/* NAVBAR END */
 
+/* SEARCH BEGIN */
 .search {
   position: relative;
   max-width: 400px;
@@ -162,6 +171,7 @@
 
   margin: auto;
   border-radius: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 
   height: 40px;
   max-width: 40px;
@@ -171,32 +181,9 @@
   z-index: 1;
 }
 
-.search::after {
-  content: "Tìm kiếm";
-
-  position: absolute;
-  top: 28%;
-  right: 34%;
-
-  transform: translateY(-50%);
-  transform: translateX(50%);
-
-  font-size: 1.5rem;
-  color: var(--color-origin);
-  text-transform: capitalize;
-
-  z-index: 1;
-}
-
-.search:hover .search-box {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
-  z-index: 2;
-}
-
 #check:checked ~ .search-box {
   max-width: 380px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.16);
-  z-index: 2;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
 .search-box input {
@@ -217,7 +204,7 @@
 
 .search-box .icon {
   position: absolute;
-  right: -2px;
+  right: 0;
   top: 0;
 
   border-radius: 25px;
@@ -227,8 +214,8 @@
 
   text-align: center;
   line-height: 40px;
-  color: var(--color-origin);
-  font-size: 20px;
+  color: var(--color-black);
+  font-size: 1.6rem;
 
   background: var(--color-white);
 
@@ -249,12 +236,21 @@
 #check {
   display: none;
 }
-/* Header end*/
+/* SEARCH END */
+/* ============== HEADER END =================*/
 
-/* Footer begin*/
-.footer {
-  height: 200rem;
-  background-color: lightgray;
+/* ============== CONTAINER BEGIN ================ */
+.container {
+  margin-top: var(--height-header);
+
+  height: 60rem;
+
+  background-color: var(--color-background-master);
 }
+/* ============== CONTAINER END ================= */
 
-/* Footer end*/
+/* =============== FOOTER BEGIN =====================*/
+.footer {
+  background-color: #feffdd;
+}
+/* ============== FOOTER END =======================*/

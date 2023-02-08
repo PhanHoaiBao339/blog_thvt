@@ -11,15 +11,16 @@
   --color-yellow-white: #ffffcc;
   --color-orange: #ff9800;
   --color-orange-light: #ffc107;
-  --color-bg-submenu: #282828;
   --color-origin: #ffa018;
   --color-icon-fb: #1877f2;
   --color-icon-ytb: #ff0000;
   --color-line: #d3d3d3;
+  --color-background-master: #f6f7fa;
 
   /* Font */
   --font-family: "Roboto", sans-serif;
 
   /* Width | Height */
   --width-page: 1170px;
+  --height-header: 100px;
 }
