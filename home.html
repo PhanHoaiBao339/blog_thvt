@@ -131,16 +131,7 @@
 
                     <a href="" class="home-slideshow__link">Xem thêm</a>
 
-                    <ul class="home-slideshow__list">
-                        <li class="home-slideshow__item">
-                            <div class="home-slideshow__itembtn home-slideshow__itembtn--active"></div>
-                        </li>
-                        <li class="home-slideshow__item">
-                            <div class="home-slideshow__itembtn"></div>
-                        </li>
-                        <li class="home-slideshow__item">
-                            <div class="home-slideshow__itembtn"></div>
-                        </li>
+                    <ul class="home-slideshow__list" id="js-home-slideshow-add-btn">
                     </ul>
                 </div>
             </section>
@@ -310,25 +301,10 @@
         </div>
     </footer>
     <!-- Footer end -->
+
+    <!-- Script -->
+    <script src="./public/js/header-hide.js"></script>
+    <script src="./public/js/slider.js"></script>
 </body>
-
-<script>
-    window.addEventListener("load", function () {
-        const slider = document.querySelectorAll('.home-slideshow__banner');
-
-        slider[0].style.display = 'block';
-
-    });
-
-
-
-
-    // function NextShowImg(n) {
-
-    // }
-</script>
-
-<!-- Script -->
-<script src="./public/js/header-hide.js"></script>
 
 </html>
