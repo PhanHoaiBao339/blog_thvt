@@ -12,24 +12,30 @@ function plusDivs(n) {
   btn[slideIndex - 1].classList.add("home-slideshow__itembtn--active");
 }
 
-function showDivs(n) {
+function showDivs(n = "") {
   var i;
-  var x = document.getElementsByClassName("home-slideshow__banner");
+  var x = document.getElementsByClassName("home-slideshow__img");
 
   if (n > x.length) {
     slideIndex = 1;
   }
 
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
+  if (n === "") {
+    x[slideIndex - 1].style.opacity = "1";
+  } else {
+    for (i = 0; i < x.length; i++) {
+      x[i].style.animation = "hide-sau ease 3s";
+      x[i].style.opacity = "0";
+    }
 
-  x[slideIndex - 1].style.display = "block";
+    x[slideIndex - 1].style.animation = "hide-truoc ease 3s";
+    x[slideIndex - 1].style.opacity = "1";
+  }
 }
 
 function addBtnSlide() {
   var i;
-  var img = document.getElementsByClassName("home-slideshow__banner");
+  var img = document.getElementsByClassName("home-slideshow__img");
   var list = document.getElementById("js-home-slideshow-add-btn");
 
   for (i = 0; i < img.length; i++) {
@@ -45,7 +51,7 @@ function addBtnSlide() {
   }
 }
 
-showDivs(slideIndex);
+showDivs();
 addBtnSlide();
 
 var btn = document.getElementsByClassName("home-slideshow__itembtn");
