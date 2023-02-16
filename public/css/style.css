@@ -6,6 +6,7 @@
 @import url(./global/variable.css);
 
 /* === PAGE === */
+@import url(./page/home.css);
 
 /* FONT FAMILY */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");

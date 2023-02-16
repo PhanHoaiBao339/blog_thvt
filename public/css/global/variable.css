@@ -1,13 +1,17 @@
 :root {
   /* Color */
   --color-white: #fff;
+  --color-white-footer-text: #d9d9d9;
   --color-gray: #9e9e9e;
   --color-black: #282828;
+  --color-black-footer:#1c1c1c;
+  --color-black-footer-content:#242424;
   --color-blue: #2196f3;
   --color-green: #4caf50;
   --color-red: #f44336;
   --color-red-white: #ffdddd;
   --color-yellow: #ffeb3b;
+  --color-yellow-footer-icons: #e3c333;
   --color-yellow-white: #ffffcc;
   --color-orange: #ff9800;
   --color-orange-light: #ffc107;
@@ -22,5 +26,5 @@
 
   /* Width | Height */
   --width-page: 1170px;
-  --height-header: 110px;
+  --height-header: 108px;
 }
