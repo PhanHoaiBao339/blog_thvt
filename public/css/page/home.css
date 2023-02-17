@@ -1,6 +1,10 @@
 .home {
 }
 
+.home-slideshow--imgshow {
+  opacity: 1 !important;
+}
+
 .home-slideshow {
   background-color: var(--color-black);
 }

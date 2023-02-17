@@ -12,7 +12,7 @@ function plusDivs(n) {
   btn[slideIndex - 1].classList.add("home-slideshow__itembtn--active");
 }
 
-function showDivs(n = "") {
+function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("home-slideshow__img");
 
@@ -20,17 +20,13 @@ function showDivs(n = "") {
     slideIndex = 1;
   }
 
-  if (n === "") {
-    x[slideIndex - 1].style.opacity = "1";
-  } else {
-    for (i = 0; i < x.length; i++) {
-      x[i].style.animation = "hide-sau ease 3s";
-      x[i].style.opacity = "0";
-    }
-
-    x[slideIndex - 1].style.animation = "hide-truoc ease 3s";
-    x[slideIndex - 1].style.opacity = "1";
+  for (i = 0; i < x.length; i++) {
+    x[i].style.animation = "hide-sau ease 2s";
+    x[i].style.opacity = "0";
   }
+
+  x[slideIndex - 1].style.animation = "hide-truoc ease 3s";
+  x[slideIndex - 1].style.opacity = "1";
 }
 
 function addBtnSlide() {
@@ -51,7 +47,7 @@ function addBtnSlide() {
   }
 }
 
-showDivs();
+showDivs(indexedDB);
 addBtnSlide();
 
 var btn = document.getElementsByClassName("home-slideshow__itembtn");

@@ -8,5 +8,10 @@ window.onscroll = function () {
   } else {
     document.getElementById("js-header-hide").style.top = "-150px";
   }
+
   prevScrollpos = currentScrollPos;
+
+  console.log(prevScrollpos);
 };
+
+console.log(prevScrollpos);
